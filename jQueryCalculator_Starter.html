@@ -82,6 +82,18 @@ $(document).ready(function(){
 // Psuedocode: 
 
 // User presses button with value and value appears on the screen 
+    //set button as a variable
+
+$(".number").on("click", function() {
+       var buttonValue = $(this).attr("value");
+       console.log(buttonValue);
+       $("h1#firstNumber").html(buttonValue);
+   })
+
+
+ 
+
+// User presses button with value and value appears on the screen 
     //set button as a variable 
 // saves value of button id into a variable (maybe key1, key2, etc)
 // User presses operator button and operator appears on the screen
